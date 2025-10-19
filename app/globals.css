@@ -1,26 +1,75 @@
+/* app/global.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand Primary Colors */
+  --color-primary-100: #f5f2ff; /* Based on the image's lighter purple shade */
+  --color-primary-200: #c3b2ff;
+  --color-primary-300: #a786ff;
+  --color-primary-400: #8b56fc;
+  --color-primary-500: #7e32f5;
+  --color-primary-600: #6000d6;
+  --color-primary-700: #5a1ab7;
+
+  /* Brand Accent Colors */
+  --color-accent-100: #fff7eb; /* Based on the image's lighter yellow shade */
+  --color-accent-200: #ffe8c6;
+  --color-accent-300: #ffd188;
+  --color-accent-400: #feb34b;
+  --color-accent-500: #ffae00;
+  --color-accent-600: #fea034;
+  --color-accent-700: #f87208;
+
+  /* Neutral Colors */
+  --color-neutral-black: #000000;
+  --color-neutral-dark-grey: #5b616b;
+  --color-neutral-light-grey: #e0e0e0;
+  --color-neutral-white: #ffffff;
+  --color-background: #fafafa;
+  --shadow-accentued: 0px 13px 19px 0px rgba(0, 0, 0, 0.12);
+  --text-primary-color: #414141
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  font-family: var(--font-changa);
+  background-color: #fafafa;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.template {
+  padding-left: 210px;
+  padding-right: 210px;
+}
+@media screen and (max-width: 1280px) {
+  .template {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .template {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .template {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .template {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

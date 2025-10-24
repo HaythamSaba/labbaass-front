@@ -16,7 +16,7 @@ function Hero() {
           />
           {/* Hero illustration */}
           <Image
-            src="/images/hero-image.png"
+            src="/images/hero-Image.png"
             width={451}
             height={400}
             alt="hero illustration"

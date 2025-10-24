@@ -22,8 +22,6 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
-    // keep your qualities if you need them
-    quality: 75,
   },
 };
 

@@ -23,7 +23,7 @@ const nextConfig = {
       },
     ],
     // keep your qualities if you need them
-    qualities: [75, 100],
+    quality: 75,
   },
 };
 

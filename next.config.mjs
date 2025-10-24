@@ -1,16 +1,11 @@
-// next.config.mjs
-
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
-      // NEW PATTERN: Added to allow images from the /uploads/ path
       {
         protocol: "https",
         hostname: "dashboard.labbaass.com",
         pathname: "/uploads/**",
       },
-      // Keep the original /storage/ pattern if you still use it
       {
         protocol: "https",
         hostname: "dashboard.labbaass.com",
@@ -23,6 +18,7 @@ const nextConfig = {
       },
     ],
   },
+  reactStrictMode: true,
 };
 
 export default nextConfig;
